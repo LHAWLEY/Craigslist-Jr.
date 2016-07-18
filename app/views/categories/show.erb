@@ -1,0 +1,13 @@
+<h2>
+  <%= @category.name %>
+</h2>
+
+<ul>
+  <% @category.articles.each do |article| %>
+    <li><a href="/categories/<%= @category.id %>/articles/<%= article.id %>"> <%= article.title %> </a> </li>
+  <% end %>
+</ul>
+
+<div>
+  <a href="/categories/<%= @category.id %>/articles/new">Create Post</a>
+</div>

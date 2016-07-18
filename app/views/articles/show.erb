@@ -1,0 +1,21 @@
+<h2>
+  <%= @article.title %>
+</h2>
+
+<p>
+  <%= @article.body %>
+</p>
+<p>
+  Price: <%= @article.price %>
+</p>
+<p>
+  Author: <%= @article.author %>
+</p>
+<p>
+  Email: <%= @article.email %>
+</p>
+<p>
+  Created at: <%= @article.created_at %>
+</p>
+
+<a href= "/categories/<%= @category.id %>/articles/<%= @article.id %>/edit">Edit Post</a>

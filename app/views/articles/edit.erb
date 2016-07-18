@@ -1,0 +1,10 @@
+<%= @error_message %>
+<form action="/categories/<%= @category.id %>/articles/<%= @article.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input name="article[title]" type="text" value="<%= @article.title %>"><br><br>
+  <input name="article[body]" type="text" value="<%= @article.body %>"><br><br>
+  <input name="article[price]" type="float" value="<%= @article.price %>"><br><br>
+  <input name="article[author]" type="text" value="<%= @article.author %>"><br><br>
+  <input name="article[email]" type="text" value="<%= @article.email %>"><br>
+  <input type="submit" >
+</form>

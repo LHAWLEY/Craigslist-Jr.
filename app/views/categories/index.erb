@@ -1,0 +1,5 @@
+<ul>
+  <% @categories.each do |i| %>
+    <li><a href="/categories/<%= i.id %>"><%= i.name %></a> </li>
+  <% end %>
+</ul>
